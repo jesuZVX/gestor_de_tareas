@@ -1,0 +1,76 @@
+/* style.qss - Estilo moderno sin propiedades no soportadas */
+
+QWidget {
+    font-family: "Segoe UI", "Arial";
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+QLabel {
+    color: #333;
+    font-size: 14px;
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #388e3c;
+}
+
+QLineEdit, QComboBox {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    color: #333;
+}
+
+QComboBox QAbstractItemView {
+    selection-background-color: #4CAF50;
+    background-color: white;
+    color: #333;
+}
+
+QScrollArea {
+    background: transparent;
+}
+
+/* Cards */
+QFrame[objectName="card"] {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    /* transiciones sencillas son OK, pero no box-shadow */
+    transition: all 0.3s ease;
+}
+
+/* Separador horizontal */
+QFrame#linea {
+    background-color: #ccc;
+    height: 1px;
+    margin: 10px 0;
+}
+
+/* Scrollbars */
+QScrollBar:vertical {
+    background: #e0e0e0;
+    width: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4CAF50;
+    min-height: 20px;
+    border-radius: 5px;
+}

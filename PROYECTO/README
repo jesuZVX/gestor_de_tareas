@@ -1,0 +1,117 @@
+# Proyecto: Gestor de Tareas y Proyectos
+
+### Descripción General:
+Sistema de escritorio desarrollado en **Python** con **PyQt6**, orientado a la **gestión de proyectos, tareas y usuarios**.
+El sistema permite a administradores y colaboradores gestionar sus proyectos, tareas asignadas y notificaciones.
+
+---
+
+## Tecnologías utilizadas:
+- **Python 3.11**
+- **PyQt6** (para interfaz gráfica)
+- **SQLAlchemy** (ORM para base de datos)
+- **SQLite** (base de datos local)
+- **bcrypt** (hash de contraseñas)
+
+---
+
+## Estructura del Proyecto:
+```
+PROYECTO-IA/
+|
+|-- backend/
+|    |-- database.py
+|    |-- models.py
+|    |-- auth.py
+|
+|-- frontend/
+|    |-- login.py
+|    |-- registro.py
+|    |-- recuperar.py
+|    |-- panel_principal.py (PanelAdmin)
+|    |-- panel_usuario.py
+|    |-- portada.py
+|
+|-- archivos_tareas/  (archivos adjuntos de tareas)
+|-- imagenes/         (logo, iconos, fondo inicio)
+|-- main_app.py
+|-- README.md
+|-- style.qss
+```
+
+---
+
+## Funcionalidades ya implementadas:
+
+### 1. Autenticación
+- Registro de usuarios.
+- Inicio de sesión.
+- Recuperación de contraseña (con envío simulado).
+- Roles: **admin** y **colaborador**.
+
+### 2. Panel Administrador (PanelAdmin)
+- Ver proyectos creados.
+- Crear nuevos proyectos.
+- Editar proyectos existentes.
+- Eliminar proyectos (eliminación lógica).
+- Ver tareas creadas dentro de los proyectos.
+- Mostrar progreso del proyecto (% completado).
+- Notificaciones (básico).
+
+### 3. Tareas
+- Visualizar tareas asignadas.
+- Editar tareas (título, descripción, fecha de vencimiento, estado).
+- Subida de archivos asociados a tareas (Word, PDF, PNG, JPG).
+- Eliminación lógica de tareas.
+
+### 4. Interfaz gráfica
+- Estilo moderno: paleta verde/blanco/gris.
+- Barra lateral.
+- Cards para proyectos y tareas.
+- Fondo general de la app amigable.
+
+---
+
+## Funcionalidades pendientes:
+
+
+### 1. Mejoras de funcionalidades
+- Panel de colaborador (únicamente ver proyectos/tareas asignadas).
+- Notificaciones más avanzadas (diferenciar vistas leídas / no leídas).
+- Crear tareas desde el proyecto directamente.
+- Asignar tareas a usuarios específicos.
+- Sistema de prioridades en tareas (alta, media, baja).
+- Subida de múltiples archivos por tarea (opcional).
+
+### 2. Seguridad
+- Validaciones más estrictas en campos.
+- Manejo de errores global (para que la app nunca crashee).
+
+### 3. Extras visuales
+- Animaciones suaves al cambiar de pantalla.
+- Mejorar la vista de notificaciones.
+
+### 4. Base de Datos
+- Migrar la base de datos de SQLite a MySQL si se quiere escalar.
+
+---
+
+## Plan de tareas inmediatas:
+- [x] Corregir `panel_principal.py` (ya hecho)
+- [ ] Crear `panel_usuario.py`
+- [ ] Integrar roles (admin / colaborador) en `main_app.py`
+- [ ] Mejorar gestión de archivos adjuntos
+- [ ] Terminar sección de notificaciones
+- [ ] Crear dashboard de colaborador (visualizar tareas asignadas)
+
+---
+
+# 📈 Estado Actual del Proyecto: 
+**70% Completado.**
+
+**📅 Fecha estimada de finalización:** 1 semana si seguimos este ritmo. 
+
+---
+
+# Autor:
+**Jesus zambramo, jose peralta**
